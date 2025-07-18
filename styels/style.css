@@ -14,6 +14,12 @@
     display: flex;
 }
 
+p {
+    font-size: 18px;
+    color: #727272;
+    margin: 0px;
+}
+
 .dark01 {
     color: #131313;
 }
@@ -28,9 +34,16 @@
 
 /* header section style */
 
+
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
 nav {
     justify-content: space-between;
     align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 nav li {
@@ -44,6 +57,62 @@ nav a {
 }
 
 .brand-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.hero img {
+    margin-bottom: 20px;
+}
+
+
+/* main section style */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main > section {
+    margin-top: 100px;
+}
+
+/* quick list section */
+
+.quick-list-container {
+    display: flex;
+    gap: 50px;
+}
+
+.quick-list-imgbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quick-list-content {
+    flex-direction: column;
+    justify-content: center;
 }
